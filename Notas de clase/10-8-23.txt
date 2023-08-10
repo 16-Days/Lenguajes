@@ -1,1 +1,37 @@
+La ejecución de un programa es la secuencia de puntos,
+cada punto de control genera un estado del programa.
+
+Programación procedimental (Basado en paradigma imperativo y estructurado)
+-llamadas a procedimientos 
+-Procedimiento: bloque de codigo con una serie de instrucciones 
+
+Paso de parametros 
+
+C siempre utiliza metodo de parametros por valor para pasar variables a funciones 
+Para que la funcion retorne un valor atravez de un argumento hay que pasar la direccion de la variable y que sea puntero 
+
+Parametros por valor 
+
+-menos eficientens ya que son llamados por copia, cada invocacion crea una copia (en C)
+
+
+Parametro por referencia:
+  float *x
+
+Parametro por valor 
+  -reciben copias
+  -nunca cambian el valor del argumento del original
+
+Parametro por referencia
+  -el valor original se puede modificar <
+
+Parametros const
+  -mas seguridad para errores
+  -protege la dirección o el valor 
+  -da error al intentar de cambiar 
+
+  const int x  //por valor
+  const int *  //por referencia 
+
+Si SE TRATA DE MODIFICAR EL X LUEGO DARA ERROR AL DECLARARSE COMO CONSTANTE
 
