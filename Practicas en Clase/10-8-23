@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+void quienesprimo(int evaluar[]) {
+    int *inicio = evaluar;  
+    int *fin = evaluar + 10;  
+    
+    while (inicio < fin) {
+        int confirmaPrimo = 1;
+        //validacion para encontrar primos
+        for (int i = 2; i * i <= *inicio; i++) {
+            if (*inicio % i == 0) {
+                confirmaPrimo = 0; 
+                 printf("No es Primo: %d\n", *inicio); //Indica el contenido del puntero el cual es primo
+                break;
+            }
+        }
+        if (confirmaPrimo == 1) {
+            printf("Primo: %d\n", *inicio); //Indica el contenido del puntero el cual es primo
+        }
+        inicio++;  
+    }
+}
+
+void main() {
+    int arr[10] = {7,14,23,57,16,6,7,18,19,10};
+    quienesprimo(arr);
+    printf("\nCompletado");
+}
