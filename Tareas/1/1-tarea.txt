@@ -1,4 +1,4 @@
-Tecnologico de Costa Rica
+laTecnologico de Costa Rica
 
 Lenguajes De Programacion 
 Grupo 60
@@ -11,4 +11,6 @@ Carnet: 2019063903
 Tarea 1
 Entrega: 13 de agosto de 2023
 
-Estatus: 
+Estatus: regular
+
+Solo no subi los node_modules estandars porque pesan mucho y no se modificaron en base a la instalacion regular de react y node js
